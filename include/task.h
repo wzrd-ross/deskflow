@@ -1,9 +1,10 @@
 #include<string>
+#include<vector>
 #pragma once
 
 enum class Status {ToDo, InProgress, Done};
 
-std::string statusToString();
+std::string statusToString(Status status);
 
 struct Task
 {

@@ -3,7 +3,7 @@
 #include<iostream>
 #include "task.h"
 
-#pragma once
+
 
 
 std::string statusToString(Status status) {

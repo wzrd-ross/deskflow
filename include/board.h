@@ -2,12 +2,12 @@
 #include "task.h"
 #include<vector>
 
-class board {
+class Board {
 public:
-    void addTask(const Task& task);
+    void addTask(const Task& t);
     void deleteTask(size_t index);
-    task& getTask(size_t index);
-    const std::vector<task>& getTasks() const;
+    Task& getTask(size_t index);
+    const std::vector<Task>& getTasks() const;
 
 private:
     std::vector<Task> tasks;

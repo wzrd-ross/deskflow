@@ -3,20 +3,20 @@
 #include<vector>
 #include<string>
 
-void board::addTask(const Task& newTask) {
-    tasks.push_back(newTask);
+void Board::addTask(const Task& t) {
+    tasks.push_back(t);
 }
 
-void board::deleteTask(size_t index) {
+void Board::deleteTask(size_t index) {
     if (index < tasks.size()) { 
         tasks.erase(tasks.begin() + index);
     }
 }
 
-Task& board::getTask(size_t index) {
+Task& Board::getTask(size_t index) {
     return tasks.at(index);
 }
 
-const std::vector<Task>& board::getTasks() const {
+const std::vector<Task>& Board::getTasks() const {
     return tasks;
 }

@@ -48,7 +48,7 @@ void changeStatus(std::vector<Task>& tasks)
 
     if (selection >= 0 && selection < tasks.size()) { 
         std::cout << tasks[selection].title << " - "
-                  << tasks[selection].status << '\n'
+                  << statusToString(tasks[selection].status) << '\n'
                   << tasks[selection].description << '\n';
 
 
