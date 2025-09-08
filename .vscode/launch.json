@@ -2,17 +2,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(lldb) Launch",
+            "name": "(lldb) Launch Deskflow",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/deskflow", 
+            "program": "${workspaceFolder}/deskflow",   // run the already built binary
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": false,
             "MIMode": "lldb",
-            "preLaunchTask": "build deskflow"
+            "preLaunchTask": "build deskflow"          // runs your g++ build first
         }
     ]
 }
